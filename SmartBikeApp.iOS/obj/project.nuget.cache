@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "ACARrp32u8Hq04qeNK2weVDWzAO2ex9gWb6qYNPjDlH4KbNbKr3h5YgkmxA3JIs4ZyywvP4Sb2As19PXQ1wbIA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\vinic\\source\\repos\\SmartBikeApp\\SmartBikeApp\\SmartBikeApp.iOS\\SmartBikeApp.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\vinic\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\vinic\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\vinic\\.nuget\\packages\\plugin.permissions\\3.0.0.12\\plugin.permissions.3.0.0.12.nupkg.sha512",
+    "C:\\Users\\vinic\\.nuget\\packages\\xam.plugin.geolocator\\4.5.0.6\\xam.plugin.geolocator.4.5.0.6.nupkg.sha512",
+    "C:\\Users\\vinic\\.nuget\\packages\\xamarin.essentials\\1.5.3.1\\xamarin.essentials.1.5.3.1.nupkg.sha512",
+    "C:\\Users\\vinic\\.nuget\\packages\\xamarin.forms\\4.6.0.726\\xamarin.forms.4.6.0.726.nupkg.sha512",
+    "C:\\Users\\vinic\\.nuget\\packages\\xamarin.forms.maps\\4.6.0.726\\xamarin.forms.maps.4.6.0.726.nupkg.sha512"
+  ],
+  "logs": []
+}
