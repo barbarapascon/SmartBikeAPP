@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="SmartBikeApp.View.AboutPage"
+             Title="About us">
+    <ContentPage.Content>
+        <StackLayout Orientation="Horizontal">
+            <Image Source="bike_307807_640" Aspect="AspectFit"  Margin="10"/>
+            <StackLayout Margin="10">
+                <Label Text="Dados do aplicativo"
+                   FontAttributes="Bold"
+                   FontSize="Large"
+                   VerticalOptions="EndAndExpand"
+                   HorizontalOptions="Center"/>
+
+                <Label Text="Nome do app: PickYourBike"
+                   FontAttributes="Bold"
+                   FontSize="Medium"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"/>
+
+                <Label Text="Descrição do projeto: Desenvolvido como parte dos objetivos específicos do TCC"
+                   FontAttributes="Italic"
+                   FontSize="Small"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   HorizontalTextAlignment="Center"/>
+
+                <Label Text="Autor: Vinícius de Andrade"
+                   FontAttributes="Bold"
+                   FontSize="Medium"
+                   VerticalOptions="EndAndExpand"
+                   HorizontalOptions="Center" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

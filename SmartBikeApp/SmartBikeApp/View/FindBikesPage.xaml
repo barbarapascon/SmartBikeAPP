@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             mc:Ignorable="d"
+             x:Class="SmartBikeApp.View.FindBikesPage"
+             Title="Find bikes">
+
+        
+            <Grid x:Name="principalDetailHome">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.7*"/>
+                    <RowDefinition Height="1.5*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+
+                <Grid x:Name="TopHome" Grid.Row="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image x:Name="WeatherFrameBackground" Source="Bikechain" Aspect="Fill"  RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}" Grid.Row="0" Grid.Column="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Opacity="0.8" />
+                    <StackLayout BackgroundColor="Black" Opacity="0.6">
+                        <Label Text="{Binding Title}" TextColor="White" FontSize="Title" FontAttributes="Bold" HorizontalTextAlignment="Center" HorizontalOptions="Center"/>
+                        <Label x:Name="tempLabel" Text="{Binding Temperature}" TextColor="White" FontSize="25" FontAttributes="Italic" HorizontalTextAlignment="Start" HorizontalOptions="StartAndExpand" Padding="15,0"/>
+                        <Label x:Name="windLabel" Text="{Binding Wind, StringFormat='Vento: {0}'}" TextColor="White" FontSize="20" FontAttributes="Italic" HorizontalTextAlignment="Start" HorizontalOptions="StartAndExpand" Padding="15,0"/>
+                        <Label x:Name="humidityLabel" Text="{Binding Humidity, StringFormat='Humidade: {0}'}" TextColor="White" FontSize="15" FontAttributes="Italic" HorizontalTextAlignment="Start" HorizontalOptions="StartAndExpand" Padding="15,0"/>
+                        <Label x:Name="visibilitylabel" Text="{Binding Visibility, StringFormat='Visibilidade: {0}'}" TextColor="White" FontSize="15" FontAttributes="Italic" HorizontalTextAlignment="Start" HorizontalOptions="StartAndExpand" Padding="15,0"/>
+                    </StackLayout>
+                </Grid>
+
+                <Grid x:Name="BottomHome" Grid.Row="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <maps:Map x:Name="map" MapType="Street"  IsShowingUser="true"/>
+                    <StackLayout Padding="4,-1" VerticalOptions="EndAndExpand" HorizontalOptions="Start" BackgroundColor="Transparent">
+                        <Frame CornerRadius="60"
+                                   HeightRequest="60"
+                                   WidthRequest="60"
+                                   Padding="0"
+                                   HorizontalOptions="Center" IsClippedToBounds="True" >
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer x:Name="qrCodePage" Tapped="qrCodePage_Tapped" NumberOfTapsRequired="1"/>
+                        </Frame.GestureRecognizers>
+                            <Image x:Name="QrCodeImage" Source="business_1.png"  Aspect="AspectFit" HeightRequest="40" WidthRequest="40"/>
+                        </Frame>
+                    </StackLayout>
+
+                    <StackLayout Padding="0,100,10,0" VerticalOptions="Center" HorizontalOptions="End" BackgroundColor="Transparent" Orientation="Vertical">
+                        <Switch x:Name="swChangeView" HorizontalOptions="Center" Toggled="swChangeView_Toggled" Rotation="-90"/>
+
+                    </StackLayout>
+
+                </Grid>
+            </Grid>
+</ContentPage>
