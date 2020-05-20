@@ -3,6 +3,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using SmartBikeApp;
 
+
 namespace SmartBikeApp
 {
     
@@ -16,7 +17,6 @@ namespace SmartBikeApp
 
         protected override void OnStart()
         {
-            
         }
 
         protected override void OnSleep()

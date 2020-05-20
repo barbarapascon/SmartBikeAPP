@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "582440985444",
+    "firebase_url": "https://smartbikepushnotification.firebaseio.com",
+    "project_id": "smartbikepushnotification",
+    "storage_bucket": "smartbikepushnotification.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:582440985444:android:4c1741e1142f604abd5071",
+        "android_client_info": {
+          "package_name": "com.tcc.smartbikeapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "582440985444-qtfbo3olf9tamrdr7t5neu3u3p6feoij.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlzi8zt5RdfsTE4eHTtHZu4xR_tSaJ2QU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "582440985444-qtfbo3olf9tamrdr7t5neu3u3p6feoij.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

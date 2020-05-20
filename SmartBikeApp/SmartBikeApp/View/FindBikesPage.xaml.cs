@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using Plugin.Geolocator;
+using SmartBikeApp.Interfaces;
 using SmartBikeApp.Model;
 using SmartBikeApp.Service;
 using SmartBikeApp.ViewModel;
@@ -33,8 +34,6 @@ namespace SmartBikeApp.View
 
             SettingPins p = new SettingPins();
 
-
-
             foreach (Pin pino in p.pins)
             {
                 pino.InfoWindowClicked += async (s, args) =>
@@ -49,6 +48,7 @@ namespace SmartBikeApp.View
                 };
                 map.Pins.Add(pino);
             }
+            DependencyService.Get<INotification>().CreateNotification("TesteNotification", "A notificação está funcionando.");
         }
 
         private async void GetLocation()
@@ -125,7 +125,7 @@ namespace SmartBikeApp.View
 
 
         private void qrCodePage_Tapped(object sender, EventArgs e)
-        {
+        {         
             DoAnimation(sender);
             //MasterDetailPage p = (MasterDetailPage)Application.Current.MainPage;            
             //p.Detail = new NavigationPage(new QRcodePage());          
