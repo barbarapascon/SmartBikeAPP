@@ -14,7 +14,7 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
             <!-- riding-->
-            <Image x:Name="background_img" Source="riding" Aspect="Fill"  RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}" Grid.Row="0" Grid.Column="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Opacity="0.8" />
+            <Image x:Name="background_img" Source="login_Image.jpg" Aspect="Fill"  RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}" Grid.Row="0" Grid.Column="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Opacity="0.8" />
 
             <Grid x:Name="Interno">
                 <Grid.RowDefinitions>
@@ -42,7 +42,7 @@
                 <!--<Grid RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}">-->
                 <Label Text="Esqueci minha senha." TextColor="DarkRed" TextDecorations="Underline" FontSize="Subtitle" FontAttributes="Bold" Grid.Row="3"  Grid.ColumnSpan="3" VerticalOptions="Start" HorizontalOptions="CenterAndExpand" Margin="0,0,0,30">
                     <Label.GestureRecognizers>
-                        <TapGestureRecognizer x:Name="lbEsqueciSenha" Tapped="lbEsqueciSenha_Tapped" NumberOfTapsRequired="1"/>
+                        <TapGestureRecognizer x:Name="lbEsqueciSenha" Tapped="LbEsqueciSenha_Tapped" NumberOfTapsRequired="1"/>
                     </Label.GestureRecognizers>
                 </Label>
             </Grid>

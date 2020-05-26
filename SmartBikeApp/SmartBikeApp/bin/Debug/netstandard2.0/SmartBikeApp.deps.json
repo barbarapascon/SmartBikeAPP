@@ -13,9 +13,9 @@
           "NETStandard.Library": "2.0.3",
           "Newtonsoft.Json": "12.0.3",
           "Xam.Plugin.Geolocator": "4.5.0.6",
-          "Xamarin.Essentials": "1.5.3.1",
-          "Xamarin.Forms": "4.6.0.726",
-          "Xamarin.Forms.Maps": "4.6.0.726",
+          "Xamarin.Essentials": "1.5.3.2",
+          "Xamarin.Forms": "4.6.0.800",
+          "Xamarin.Forms.Maps": "4.6.0.800",
           "ZXing.Net.Mobile": "2.4.1",
           "ZXing.Net.Mobile.Forms": "2.4.1"
         },
@@ -61,7 +61,7 @@
           }
         }
       },
-      "Xamarin.Essentials/1.5.3.1": {
+      "Xamarin.Essentials/1.5.3.2": {
         "dependencies": {
           "System.Numerics.Vectors": "4.5.0"
         },
@@ -72,30 +72,30 @@
           }
         }
       },
-      "Xamarin.Forms/4.6.0.726": {
+      "Xamarin.Forms/4.6.0.800": {
         "runtime": {
           "lib/netstandard2.0/Xamarin.Forms.Core.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "4.6.0.446"
+            "fileVersion": "4.6.0.474"
           },
           "lib/netstandard2.0/Xamarin.Forms.Platform.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "4.6.0.446"
+            "fileVersion": "4.6.0.474"
           },
           "lib/netstandard2.0/Xamarin.Forms.Xaml.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "4.6.0.446"
+            "fileVersion": "4.6.0.474"
           }
         }
       },
-      "Xamarin.Forms.Maps/4.6.0.726": {
+      "Xamarin.Forms.Maps/4.6.0.800": {
         "dependencies": {
-          "Xamarin.Forms": "4.6.0.726"
+          "Xamarin.Forms": "4.6.0.800"
         },
         "runtime": {
           "lib/netstandard2.0/Xamarin.Forms.Maps.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "4.6.0.446"
+            "fileVersion": "4.6.0.474"
           }
         }
       },
@@ -117,7 +117,7 @@
       },
       "ZXing.Net.Mobile.Forms/2.4.1": {
         "dependencies": {
-          "Xamarin.Forms": "4.6.0.726",
+          "Xamarin.Forms": "4.6.0.800",
           "ZXing.Net.Mobile": "2.4.1"
         },
         "runtime": {
@@ -177,26 +177,26 @@
       "path": "xam.plugin.geolocator/4.5.0.6",
       "hashPath": "xam.plugin.geolocator.4.5.0.6.nupkg.sha512"
     },
-    "Xamarin.Essentials/1.5.3.1": {
+    "Xamarin.Essentials/1.5.3.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-6sE3kGMhES7dsR8ll+ar+roEIFobjPfDskKNMsU4FF6cV27ZsdArGZHxe1QqPPJcMT6PzJsGvA3l5PNMZgw5ng==",
-      "path": "xamarin.essentials/1.5.3.1",
-      "hashPath": "xamarin.essentials.1.5.3.1.nupkg.sha512"
+      "sha512": "sha512-BSLgDJUOPFRwTpQaftM+s4qb/MsTjrqXulEYDOcK6KF3i0Orf75zo3RwRfqnQ8WfpoEFxW/v0jgcPWCvOMgHxg==",
+      "path": "xamarin.essentials/1.5.3.2",
+      "hashPath": "xamarin.essentials.1.5.3.2.nupkg.sha512"
     },
-    "Xamarin.Forms/4.6.0.726": {
+    "Xamarin.Forms/4.6.0.800": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-NI7iL5NnrQN/gCyoHLlexcDndNin67hFV7ObG8QQU2zbEi15B1SRaAsuiNeXVYAHfXg3/amqryqzGd+3R6lyZQ==",
-      "path": "xamarin.forms/4.6.0.726",
-      "hashPath": "xamarin.forms.4.6.0.726.nupkg.sha512"
+      "sha512": "sha512-9BkqdiqdaigD+QlHqmHHMm32NNo7mnuIG+fOgIbSbzzqT1MKN+KPVgem8OUkKOnFP4u6piq9D99xrVafKSztIg==",
+      "path": "xamarin.forms/4.6.0.800",
+      "hashPath": "xamarin.forms.4.6.0.800.nupkg.sha512"
     },
-    "Xamarin.Forms.Maps/4.6.0.726": {
+    "Xamarin.Forms.Maps/4.6.0.800": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-+iCq0456mZNFKJj66oRCV1W5TE3gDjCG40uW2yX/zeITAUtF+c7K0WLXSQ54838B6cE4B6zBg/AQKltaVdr2iw==",
-      "path": "xamarin.forms.maps/4.6.0.726",
-      "hashPath": "xamarin.forms.maps.4.6.0.726.nupkg.sha512"
+      "sha512": "sha512-QUrcVZHt2uiE6DI4MmmTLdNN/z/awCtOjCMO6J7A7z8/CSn/ukdsdy8IPYPbrQvp8O/EvXsi6rhjcDNIb9mduQ==",
+      "path": "xamarin.forms.maps/4.6.0.800",
+      "hashPath": "xamarin.forms.maps.4.6.0.800.nupkg.sha512"
     },
     "ZXing.Net.Mobile/2.4.1": {
       "type": "package",

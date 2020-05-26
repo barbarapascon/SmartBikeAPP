@@ -3,38 +3,81 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d"
+             mc:Ignorable="d"             
              x:Class="SmartBikeApp.View.AboutPage"
-             Title="About us">
+             Title="Sobre">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem 
+                 IconImageSource="information.png"
+                 Order="Primary"
+                 Priority="0"/>
+    </ContentPage.ToolbarItems>
+    
     <ContentPage.Content>
-        <StackLayout Orientation="Horizontal">
-            <Image Source="bike_307807_640" Aspect="AspectFit"  Margin="10"/>
-            <StackLayout Margin="10">
-                <Label Text="Dados do aplicativo"
-                   FontAttributes="Bold"
-                   FontSize="Large"
-                   VerticalOptions="EndAndExpand"
-                   HorizontalOptions="Center"/>
+        
+        <StackLayout BackgroundColor="White">
+           
+        <RelativeLayout  HorizontalOptions="Center">
+                <Frame x:Name="frAbout"
+                CornerRadius="50"
+                HeightRequest="450"
+                WidthRequest="300"
+                Padding="0"
+                HorizontalOptions="CenterAndExpand" IsClippedToBounds="True"
+                HasShadow="True"
+                Margin="0,20,0,0">
+                    
+                <StackLayout Margin="5,30,5,0"  HeightRequest="500" WidthRequest="265" HorizontalOptions="Center" Orientation="Vertical">                       
+                        <Label Text="Aplicativo desenvolvido como parte dos objetivos específicos do Trabalho de Conclusão de Curso - SmartBike, do bacharelado em Engernharia de Computação da Faculdade de Tecnologia Termomecanica."
+                       FontAttributes="Italic"
+                       FontSize="Default"                       
+                       LineBreakMode="WordWrap" 
+                       XAlign="Start"
+                       Margin="4.5,5"/>
 
-                <Label Text="Nome do app: PickYourBike"
-                   FontAttributes="Bold"
-                   FontSize="Medium"
-                   VerticalOptions="Center"
-                   HorizontalOptions="Center"/>
+                    <Label Text="Autores: "
+                       FontAttributes="Bold"
+                       FontSize="Medium"
+                       VerticalOptions="Start"
+                       HorizontalOptions="Center"
+                       Margin="0,15,0,10"
+                       TextColor="#0583F2"/>
+                        <Label Text="Bárbara Pascon de Azevedo Marques "
+                           FontSize="Small"
+                           HorizontalOptions="Center"
+                           TextColor="Gray"/>
+                        <Label Text="Raquel Sales de Azevedo"
+                           FontSize="Small"
+                           HorizontalOptions="Center"
+                           TextColor="Gray"/>
+                        <Label Text="Vinícius de Andrade Barros"
+                           FontSize="Small"
+                           HorizontalOptions="Center"
+                           TextColor="Gray"/>
+                        <Label Text="Vítor Marques de Castro"
+                           FontSize="Small"
+                           HorizontalOptions="Center"
+                           TextColor="Gray"/>
+                        <Image Source="genericBike.jpg" Aspect="AspectFit" HeightRequest="100" WidthRequest="100" VerticalOptions="EndAndExpand" HorizontalOptions="EndAndExpand"/>
+                    </StackLayout>                    
+                </Frame>
 
-                <Label Text="Descrição do projeto: Desenvolvido como parte dos objetivos específicos do TCC"
-                   FontAttributes="Italic"
-                   FontSize="Small"
-                   VerticalOptions="Center"
-                   HorizontalOptions="Center"
-                   HorizontalTextAlignment="Center"/>
-
-                <Label Text="Autor: Vinícius de Andrade"
-                   FontAttributes="Bold"
-                   FontSize="Medium"
-                   VerticalOptions="EndAndExpand"
-                   HorizontalOptions="Center" />
-            </StackLayout>
+                <Frame x:Name="frTitleBike"
+                    CornerRadius="3"
+                    HeightRequest="35"
+                    WidthRequest="200"
+                    Padding="0"
+                    HorizontalOptions="CenterAndExpand" IsClippedToBounds="True"
+                    HasShadow="True"
+                    Margin="45,10,0,0">
+                    <Label Text="SmartBike"
+                       FontAttributes="Bold"
+                       FontSize="Title"
+                       VerticalOptions="Start"
+                       HorizontalOptions="Center"                       
+                       TextColor="#0583F2"/>
+                </Frame>
+            </RelativeLayout>            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

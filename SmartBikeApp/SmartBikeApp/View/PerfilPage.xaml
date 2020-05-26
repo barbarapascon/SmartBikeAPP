@@ -4,12 +4,67 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="SmartBikeApp.View.PerfilPage">
+             x:Class="SmartBikeApp.View.PerfilPage"
+             Title="Seu perfil">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Seu perfil"
+                 IconImageSource="perfil.png"
+                 Order="Primary"
+                 Priority="0" />
+    </ContentPage.ToolbarItems>
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <Grid x:Name="Externo" BackgroundColor="#F2F2F2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.35*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <StackLayout  BackgroundColor="Black" Opacity="0.9">
+                <Image x:Name="WeatherFrameBackground" Source="bikeBackground" Aspect="AspectFit"   Grid.Row="0" Grid.Column="0" VerticalOptions="Fill" HorizontalOptions="FillAndExpand" Opacity="0.9" />
+            </StackLayout>
+            <StackLayout Padding="5" Grid.Row="0" Grid.Column="0" IsClippedToBounds="True">
+         
+                <Frame CornerRadius="130"
+                                       HeightRequest="130"
+                                       WidthRequest="130"
+                                       Padding="0"
+                                       HorizontalOptions="Center" 
+                                       IsClippedToBounds="True" 
+                                       BorderColor="Gray" 
+                                       HasShadow="True" >
+                        <Image x:Name="User_image" Source="Vini" HorizontalOptions="Center"  VerticalOptions="Center"  Aspect="Fill" BackgroundColor="Transparent"/>
+                    </Frame>
+            
+            </StackLayout>
+            
+            <StackLayout Grid.Row="1" Orientation="Vertical">
+                <StackLayout Orientation="Vertical" Padding="10,5">
+                    <Label Text="Nome" TextColor="#0583F2" FontSize="Small" HorizontalOptions="Start" VerticalOptions="StartAndExpand" FontAttributes="Bold"/>
+                    <Label x:Name="FirstName" Text = "Vinícius" TextColor="Black" HorizontalOptions="Start" FontSize="Medium" FontAttributes="Italic"/>
+                </StackLayout>
+                <StackLayout Orientation="Vertical" Padding="10,3">
+                    <Label Text="Sobrenome" TextColor="#0583F2" FontSize="Small" HorizontalOptions="Start" VerticalOptions="StartAndExpand" FontAttributes="Bold"/>
+                    <Label x:Name="LastName" Text = "Andrade" TextColor="Black" HorizontalOptions="Start" FontSize="Medium" FontAttributes="Italic"/>
+                </StackLayout>
+                <StackLayout Orientation="Vertical" Padding="10,3">
+                    <Label Text="Idade" TextColor="#0583F2" FontSize="Small" HorizontalOptions="Start" VerticalOptions="StartAndExpand" FontAttributes="Bold"/>
+                    <Label x:Name="idade" Text = "23 anos" TextColor="Black" HorizontalOptions="Start" FontSize="Medium" FontAttributes="Italic"/>
+                </StackLayout>
+                <StackLayout Orientation="Vertical" Padding="10,3">
+                    <Label Text="Genero" TextColor="#0583F2" FontSize="Small" HorizontalOptions="Start" VerticalOptions="StartAndExpand" FontAttributes="Bold"/>
+                    <Label x:Name="Genero" Text = "Masculino" TextColor="Black" HorizontalOptions="Start" FontSize="Medium" FontAttributes="Italic"/>
+                </StackLayout>               
+                <StackLayout Orientation="Vertical" Padding="10,3">
+                    <Label Text="E-mail" TextColor="#0583F2" FontSize="Small" HorizontalOptions="Start" VerticalOptions="StartAndExpand" FontAttributes="Bold"/>
+                    <Label x:Name="email" Text = "viniciusdeandrade96@gmail.com" TextColor="Black" HorizontalOptions="Start" FontSize="Medium" FontAttributes="Italic"/>
+                </StackLayout>
+                <StackLayout Orientation="Vertical" Padding="10,3">
+                    <Label Text="Distância total percorrida" TextColor="#0583F2" FontSize="Small" HorizontalOptions="Start" VerticalOptions="StartAndExpand" FontAttributes="Bold"/>
+                    <Label x:Name="totalPedalado" Text = "10 km" TextColor="Black" HorizontalOptions="Start" FontSize="Medium" FontAttributes="Italic"/>
+                </StackLayout>
+            </StackLayout>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

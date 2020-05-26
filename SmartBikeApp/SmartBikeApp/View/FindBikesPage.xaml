@@ -7,9 +7,14 @@
              mc:Ignorable="d"
              x:Class="SmartBikeApp.View.FindBikesPage"
              Title="Find bikes">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Seu perfil"
+                 IconImageSource="bikePoints.png"
+                 Order="Primary"
+                 Priority="0" />
+    </ContentPage.ToolbarItems>
 
-        
-            <Grid x:Name="principalDetailHome">
+    <Grid x:Name="principalDetailHome">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="0.7*"/>
                     <RowDefinition Height="1.5*"/>
@@ -44,21 +49,22 @@
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
                     <maps:Map x:Name="map" MapType="Street"  IsShowingUser="true"/>
-                    <StackLayout Padding="4,-1" VerticalOptions="EndAndExpand" HorizontalOptions="Start" BackgroundColor="Transparent">
+                    <StackLayout Padding="4.5,-1" VerticalOptions="EndAndExpand" HorizontalOptions="Start" BackgroundColor="Transparent">
                         <Frame CornerRadius="60"
                                    HeightRequest="60"
                                    WidthRequest="60"
                                    Padding="0"
-                                   HorizontalOptions="Center" IsClippedToBounds="True" >
+                                   HorizontalOptions="Center" 
+                                   IsClippedToBounds="True" >
                         <Frame.GestureRecognizers>
-                            <TapGestureRecognizer x:Name="qrCodePage" Tapped="qrCodePage_Tapped" NumberOfTapsRequired="1"/>
+                            <TapGestureRecognizer x:Name="qrCodePage" Tapped="ImageButton_Tapped" NumberOfTapsRequired="1"/>
                         </Frame.GestureRecognizers>
-                            <Image x:Name="QrCodeImage" Source="business_1.png"  Aspect="AspectFit" HeightRequest="40" WidthRequest="40"/>
+                            <Image x:Name="ImageButton" Source="qr_code.png"  HeightRequest="60" WidthRequest="60"/>
                         </Frame>
                     </StackLayout>
 
                     <StackLayout Padding="0,100,10,0" VerticalOptions="Center" HorizontalOptions="End" BackgroundColor="Transparent" Orientation="Vertical">
-                        <Switch x:Name="swChangeView" HorizontalOptions="Center" Toggled="swChangeView_Toggled" Rotation="-90"/>
+                        <Switch x:Name="swChangeView" HorizontalOptions="Center" Toggled="SwChangeView_Toggled" Rotation="-90"/>
 
                     </StackLayout>
 

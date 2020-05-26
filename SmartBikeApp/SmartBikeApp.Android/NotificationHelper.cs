@@ -14,8 +14,8 @@ namespace SmartBikeApp.Droid
 {
     class NotificationHelper : INotification
     {
-        private Context mContext;
-        private NotificationManager mNotificationManager;
+        private readonly Context mContext;
+        //private NotificationManager mNotificationManager;
         private NotificationCompat.Builder mBuilder;
         public static String NOTIFICATION_CHANNEL_ID = "10023";
 
@@ -23,6 +23,8 @@ namespace SmartBikeApp.Droid
         {
             mContext = global::Android.App.Application.Context;
         }
+
+        [Obsolete]
         public void CreateNotification(String title, String message)
         {
             try
@@ -39,7 +41,7 @@ namespace SmartBikeApp.Droid
                     .SetUsage(AudioUsageKind.Notification).Build();
 
                 mBuilder = new NotificationCompat.Builder(mContext);
-                mBuilder.SetSmallIcon(Resource.Drawable.iconfinder_Bike_2376772);
+                mBuilder.SetSmallIcon(Resource.Mipmap.icon);
                 mBuilder.SetContentTitle(title)
                         .SetSound(sound)
                         .SetAutoCancel(true)
@@ -50,7 +52,7 @@ namespace SmartBikeApp.Droid
                         .SetVibrate(new long[0])
                         .SetDefaults((int)NotificationDefaults.Sound | (int)NotificationDefaults.Vibrate)
                         .SetVisibility((int)NotificationVisibility.Public)
-                        .SetSmallIcon(Resource.Drawable.iconfinder_Bike_2376772)
+                        .SetSmallIcon(Resource.Mipmap.icon)
                         .SetContentIntent(pendingIntent);
 
 

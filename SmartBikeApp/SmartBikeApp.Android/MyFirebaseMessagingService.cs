@@ -13,6 +13,8 @@ namespace SmartBikeApp.Droid
         {
 
         }
+
+        [System.Obsolete]
         public override void OnMessageReceived(RemoteMessage message)
         {
             base.OnMessageReceived(message);

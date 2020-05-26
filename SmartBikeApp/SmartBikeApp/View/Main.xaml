@@ -69,7 +69,7 @@
                                 <TapGestureRecognizer x:Name="NewRide" Tapped="NewRide_Tapped"/>
                             </Frame.GestureRecognizers>
                             <StackLayout Orientation="Horizontal"  Padding="13">
-                                <Image Source="sport.png"  HorizontalOptions="Start" VerticalOptions="Center"  Aspect="AspectFit"/>
+                                <Image Source="objetivoRiding.png"  HorizontalOptions="Start" VerticalOptions="Center"  Aspect="AspectFit"/>
                                 <Label Text="Nova Corrida" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"  FontSize="Large" FontAttributes="Italic" TextColor="Black" />
                             </StackLayout>
                         </Frame>
@@ -87,7 +87,7 @@
                                 <TapGestureRecognizer x:Name="tapPerfil" Tapped="tapPerfil_Tapped"/>
                             </Frame.GestureRecognizers>
                             <StackLayout Orientation="Horizontal"  Padding="13">
-                                <Image Source="resume.png"  HorizontalOptions="Start" VerticalOptions="Center"  Aspect="AspectFit"/>
+                                <Image Source="perfil.png"  HorizontalOptions="Start" VerticalOptions="Center"  Aspect="AspectFit"/>
                                 <Label Text="Meu perfil" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"  FontSize="Large" FontAttributes="Italic" TextColor="Black" />
                             </StackLayout>
                         </Frame>
@@ -105,7 +105,7 @@
                                 <TapGestureRecognizer x:Name="tapHistory" Tapped="tapHistory_Tapped"/>
                             </Frame.GestureRecognizers>
                             <StackLayout Orientation="Horizontal"  Padding="13">
-                                <Image Source="interface2.png"  HorizontalOptions="Start" VerticalOptions="Center"  Aspect="AspectFit"/>
+                                <Image Source="history.png"  HorizontalOptions="Start" VerticalOptions="Center"  Aspect="AspectFit"/>
                                 <Label Text="Histórico de corridas" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"  FontSize="Large" FontAttributes="Italic" TextColor="Black" />
                             </StackLayout>
                         </Frame>
@@ -123,7 +123,7 @@
                                 <TapGestureRecognizer x:Name="tapDestination" Tapped="tapDestination_Tapped"/>
                             </Frame.GestureRecognizers>
                             <StackLayout Orientation="Horizontal"  Padding="13">
-                                <Image Source="destination.png"  HorizontalOptions="Start" VerticalOptions="Center"  Aspect="AspectFit"/>
+                                <Image Source="bikePoints.png"  HorizontalOptions="Start" VerticalOptions="Center"  Aspect="AspectFit"/>
                                 <Label Text="Encontrar bicicletas" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"  FontSize="Large" FontAttributes="Italic" TextColor="Black" />
                             </StackLayout>
                         </Frame>
@@ -138,26 +138,27 @@
                         <ColumnDefinition Width="*"/>
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
-                    <Image Source="bike_307807_640" Aspect="AspectFit" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}" VerticalOptions="End" HorizontalOptions="End" Grid.Row="1" Grid.Column="0"/>
+                    <Image Source="genericBike.jpg" Aspect="AspectFit" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}" VerticalOptions="End" HorizontalOptions="End" Grid.Row="1" Grid.Column="0"/>
                 </Grid>
 
                 <StackLayout Orientation="Horizontal" Grid.Row="3" BackgroundColor="#4BA9F5">
-                    <StackLayout Orientation="Vertical" Padding="0,5">
+                    
+                    <StackLayout Orientation="Vertical" Padding="0, 5">
                         <StackLayout.GestureRecognizers >
                             <TapGestureRecognizer x:Name="tapAbout" Tapped="tapAbout_Tapped">
                             </TapGestureRecognizer>
                         </StackLayout.GestureRecognizers>
-                        <Image Source="internet.png" Aspect="AspectFit" HorizontalOptions="Center" VerticalOptions="Center"  HeightRequest="20" WidthRequest="20" />
-                        <Label Text="About" HorizontalOptions="Start" VerticalOptions="Center" TextColor="White" FontAttributes="Italic" FontSize="Small" Margin="15,0"/>
+                        <Image Source="information.png" Aspect="AspectFit" HorizontalOptions="Center" VerticalOptions="Center"  HeightRequest="20" WidthRequest="20" />
+                        <Label Text="About" HorizontalOptions="Start" VerticalOptions="Center" TextColor="White" FontAttributes="Italic" FontSize="Small" Margin="15, 0"/>
                     </StackLayout>
 
-                    <StackLayout HorizontalOptions="EndAndExpand" VerticalOptions="Center" Orientation="Vertical" Padding="0,5">
+                    <StackLayout HorizontalOptions="EndAndExpand" Orientation="Vertical" Padding="0, 5">
                         <StackLayout.GestureRecognizers >
                             <TapGestureRecognizer x:Name="tapLogout" Tapped="tapLogout_Tapped">
                             </TapGestureRecognizer>
                         </StackLayout.GestureRecognizers>
-                        <Image Source="multimedia.png" Aspect="AspectFit" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="28" WidthRequest="28" />
-                        <Label Text="Logout" HorizontalOptions="EndAndExpand" VerticalOptions="Center" TextColor="White" FontAttributes="Italic" FontSize="Small" Margin="15,-8" />
+                        <Image Source="logout.png" Aspect="AspectFit" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="28" WidthRequest="28" />
+                        <Label Text="Logout" HorizontalOptions="EndAndExpand" VerticalOptions="Center" TextColor="White" FontAttributes="Italic" FontSize="Small" Margin="15,-8,15,0" />
                     </StackLayout>
 
                 </StackLayout>

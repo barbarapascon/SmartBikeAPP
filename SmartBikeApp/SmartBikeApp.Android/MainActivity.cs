@@ -14,7 +14,7 @@ using Xamarin.Essentials;
 namespace SmartBikeApp.Droid
 {
     //[Activity(Label = "SmartBikeApp", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
-    [Activity(Label = "SmartBikeApp", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = true, ScreenOrientation = ScreenOrientation.Portrait, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+    [Activity(Label = "SmartBike", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = true, ScreenOrientation = ScreenOrientation.Portrait, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
 
 
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
@@ -37,8 +37,6 @@ namespace SmartBikeApp.Droid
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             Xamarin.FormsMaps.Init(this, savedInstanceState);
 
-
-
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());
 
@@ -48,19 +46,6 @@ namespace SmartBikeApp.Droid
             Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
 
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
-
-            //if (requestCode == RequestLocationId)
-            //{
-            //    if ((grantResults.Length == 1) && (grantResults[0] == (int)Permission.Granted))
-            //        DisplayInfo("Permission granted", "Aproveite o APP", "OK"); // Permissions granted - display a message.
-            //    else
-            //        // Permissions denied - display a message.
-            //        DisplayAlert();
-            //}
-            //else
-            //{
-            //    base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
-            //}
         }
         protected override void OnStart()
         {

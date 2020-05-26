@@ -26,7 +26,7 @@
         <category android:name="com.tcc.smartbikeapp" />
       </intent-filter>
     </receiver>
-    <activity android:configChanges="orientation|screenSize" android:icon="@mipmap/icon" android:label="SmartBikeApp" android:screenOrientation="portrait" android:theme="@style/MainTheme" android:name="crc64991dfd3c6994f003.MainActivity">
+    <activity android:configChanges="orientation|screenSize" android:icon="@mipmap/icon" android:label="SmartBike" android:screenOrientation="portrait" android:theme="@style/MainTheme" android:name="crc64991dfd3c6994f003.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />

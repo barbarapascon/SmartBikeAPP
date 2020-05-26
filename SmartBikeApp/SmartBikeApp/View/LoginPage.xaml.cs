@@ -19,7 +19,7 @@ namespace SmartBikeApp
             NavigationPage.SetHasNavigationBar(this, false);
         }
 
-        private void lbEsqueciSenha_Tapped(object sender, EventArgs e)
+        private void LbEsqueciSenha_Tapped(object sender, EventArgs e)
         {
 
         }

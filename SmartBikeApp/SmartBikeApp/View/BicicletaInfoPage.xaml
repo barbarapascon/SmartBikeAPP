@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="SmartBikeApp.View.BicicletaInfoPage"
+             Title="Informações da Bicicleta">
+    
+    <ContentPage.ToolbarItems>
+        <ToolbarItem 
+                 IconImageSource="Pedalla_Bike.png"
+                 Order="Primary"
+                 Priority="0"/>
+    </ContentPage.ToolbarItems>
+    
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="LightGray">
+            <RelativeLayout  HorizontalOptions="Center">
+                
+                <Frame x:Name="frBicicletaInfo"
+                        CornerRadius="30"
+                        HeightRequest="490"
+                        WidthRequest="340"
+                        Padding="0"
+                        HorizontalOptions="CenterAndExpand" IsClippedToBounds="True"
+                        HasShadow="True"
+                        Margin="0,10" 
+                       BackgroundColor="#F8F8F8">
+                    <ScrollView Orientation="Vertical">
+                    <StackLayout Orientation="Vertical" HorizontalOptions="StartAndExpand">
+                        <ScrollView Orientation="Horizontal" HorizontalOptions="CenterAndExpand" HeightRequest="200" WidthRequest="340" >
+                               <StackLayout Orientation="Horizontal" x:Name="sImagens"  BackgroundColor="#F8F8F8">
+                                <Image Source="goia1.PNG"/>
+                                <Image Source="goia2.png"/>
+                                <Image Source="goia3.png"/>
+                                <Image Source="goia4.png"/>
+                                <Image Source="goia5.png"/>                                
+                            </StackLayout>
+                        </ScrollView>                        
+                           <Label x:Name="lbModelo" Text="Gioia" TextColor="#28BC5A" FontSize="Title" HorizontalTextAlignment="Center"/>
+                        
+                        <StackLayout Orientation="Horizontal">
+                            <StackLayout Orientation="Vertical" Margin="25,0,0,10">
+                                <Label Text="Fabricante" TextColor="#489760" FontSize="Small" FontAttributes="Bold" HorizontalTextAlignment="Start"/>
+                                <Label x:Name="lbFabricante" Text="Pedalla" TextColor="Gray" FontSize="Medium" HorizontalTextAlignment="Start"/>
+                                <Label Text="Velocidade maxima" TextColor="#489760" FontSize="Small" FontAttributes="Bold" HorizontalTextAlignment="Start"/>
+                                <Label x:Name="lbSpeed" Text="25 km/h" TextColor="Gray" FontSize="Medium" HorizontalTextAlignment="Start"/>
+                                <Label Text="Alcance" TextColor="#489760" FontSize="Small" FontAttributes="Bold" HorizontalTextAlignment="Start"/>
+                                <Label x:Name="lbAlcance" Text="20 a 35 km" TextColor="Gray" FontSize="Medium" HorizontalTextAlignment="Start"/>
+                                <Label Text="Peso da bicicleta" TextColor="#489760" FontSize="Small" FontAttributes="Bold" HorizontalTextAlignment="Start"/>
+                                <Label x:Name="lbPeso" Text="23.7 kg" TextColor="Gray" FontSize="Medium" HorizontalTextAlignment="Start"/>
+                                <Label Text="Limite de Peso" TextColor="#489760" FontSize="Small" FontAttributes="Bold" HorizontalTextAlignment="Start"/>
+                                <Label x:Name="lbLimitePeso" Text="120 kg" TextColor="Gray" FontSize="Medium" HorizontalTextAlignment="Start"/>
+                                <Label Text="Níveis de auxilio" TextColor="#489760" FontSize="Small" FontAttributes="Bold" HorizontalTextAlignment="Start"/>
+                                <Label x:Name="lbAuxilio" Text="3 níveis" TextColor="Gray" FontSize="Medium" HorizontalTextAlignment="Start"/>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Vertical" HorizontalOptions="EndAndExpand" VerticalOptions="End"  Margin="0,0,20,10">
+                                <Frame CornerRadius="22"
+                                           HeightRequest="45"
+                                           WidthRequest="45"
+                                           Padding="0"                                           
+                                           HorizontalOptions="CenterAndExpand" 
+                                           VerticalOptions="End"
+                                           IsClippedToBounds="True"
+                                           HasShadow="True">
+                                    <Frame.GestureRecognizers>
+                                        <TapGestureRecognizer x:Name="lockBike" Tapped="LockBike_Tapped" NumberOfTapsRequired="1"/>
+                                    </Frame.GestureRecognizers>
+                                    <Image x:Name="ImageButton" Source="open_lock.png"  BackgroundColor="LightGray" HeightRequest="45" WidthRequest="45" />
+                                </Frame>
+                                <Label Text="Clique para desbloquear a bicicleta" FontSize="Micro" TextColor="#489760"  WidthRequest="115" 
+                                       XAlign="Center"/>
+                            </StackLayout>
+                        </StackLayout>
+                    </StackLayout>
+                </ScrollView>
+                </Frame>
+                
+            </RelativeLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

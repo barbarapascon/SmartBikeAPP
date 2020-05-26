@@ -22,10 +22,12 @@ namespace SmartBikeApp.View
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class FindBikesPage : ContentPage
     {
-        MasterDetailPage masterDt;
+        readonly MasterDetailPage masterDt;
         Position posicaoAtual;
-        public FindBikesPage(MasterDetailPage masterDetail)
+        bool bikeLocked;
+        public FindBikesPage(MasterDetailPage masterDetail, bool locked)
         {
+            bikeLocked = locked;
             masterDt = masterDetail;
             GetLocation();
             InitializeComponent();
@@ -48,7 +50,10 @@ namespace SmartBikeApp.View
                 };
                 map.Pins.Add(pino);
             }
-            DependencyService.Get<INotification>().CreateNotification("TesteNotification", "A notificação está funcionando.");
+            if (bikeLocked)
+            {
+                ImageButton.Source = @"lock.png";
+            }
         }
 
         private async void GetLocation()
@@ -110,7 +115,7 @@ namespace SmartBikeApp.View
             }
         }
 
-        private void swChangeView_Toggled(object sender, ToggledEventArgs e)
+        private void SwChangeView_Toggled(object sender, ToggledEventArgs e)
         {
             if (swChangeView.IsToggled)
             {
@@ -124,18 +129,44 @@ namespace SmartBikeApp.View
         }
 
 
-        private void qrCodePage_Tapped(object sender, EventArgs e)
+        private void ImageButton_Tapped(object sender, EventArgs e)
         {         
             DoAnimation(sender);
             //MasterDetailPage p = (MasterDetailPage)Application.Current.MainPage;            
             //p.Detail = new NavigationPage(new QRcodePage());          
-            ScannerAsync();            
+            
+            //Se a bicicleta não estiver bloqueada eu libero a realização de um novo scanner
+            if (!bikeLocked)
+            {
+                ScannerAsync();
+            }
+            //caso contrário eu libero o desbloqueio da bicicleta.
+            else
+            {
+                bikeLocked = false;
+                ImageButton.Source = @"qr_code.png";
+                //Método para desbloquear a bicicleta
+                //No retorno==tru mudar o ícone para o ícone padrão.
+            }
+            
         }
 
         private async void ScannerAsync()
         {
-            var scannerPage = new ZXingScannerPage();
-            scannerPage.Title = "Lector de QR";
+
+            ToolbarItem item = new ToolbarItem
+            {
+                Text = "Leitor de QR Code",
+                IconImageSource = ImageSource.FromFile("qr_code.png"),
+                Order = ToolbarItemOrder.Primary,
+                Priority = 0
+            };
+
+            var scannerPage = new ZXingScannerPage
+            {
+                Title = "Leitor de QR Code"
+            };
+            scannerPage.ToolbarItems.Add(item);
             await masterDt.Detail.Navigation.PopToRootAsync();
             scannerPage.OnScanResult += (result) =>
             {               
@@ -147,7 +178,7 @@ namespace SmartBikeApp.View
                     {                   
                         var duration = TimeSpan.FromMilliseconds(200);
                         Vibration.Vibrate(duration);
-                        masterDt.Detail = new NavigationPage(new AboutPage()); ;
+                        masterDt.Detail = new NavigationPage(new BicicletaInfoPage(masterDt)); 
                     }
                     else
                     {

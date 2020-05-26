@@ -14,7 +14,7 @@ namespace SmartBikeApp.ViewModel
             Pin bicicletarioEntrada = new Pin
             {
                 Position = new Position(-23.735697, -46.583292 ),
-                Label = "Entrada estacionamento.",
+                Label = "Entrada estacionamento",
                 Address = "Bicicleatas disponíves: 5",
                 Type = PinType.Place
             };
@@ -22,7 +22,7 @@ namespace SmartBikeApp.ViewModel
             Pin bicicletarioSaidaEstacionamento = new Pin
             {
                 Position = new Position(-23.736220, -46.583468),
-                Label = "Sída do estacionamento.",
+                Label = "Saída do estacionamento.",
                 Address = "Bicicleatas disponíves: 15",
                 Type = PinType.Place
             };
