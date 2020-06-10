@@ -25,9 +25,12 @@ namespace SmartBikeApp.View
         readonly MasterDetailPage masterDt;
         Position posicaoAtual;
         bool bikeLocked;
-        public FindBikesPage(MasterDetailPage masterDetail, bool locked)
+        User usuarioLogado;
+
+        public FindBikesPage(MasterDetailPage masterDetail, User userLogged, bool usuarioEmCorrida)
         {
-            bikeLocked = locked;
+            usuarioLogado = userLogged;
+            bikeLocked = usuarioEmCorrida;
             masterDt = masterDetail;
             GetLocation();
             InitializeComponent();
@@ -129,7 +132,7 @@ namespace SmartBikeApp.View
         }
 
 
-        private void ImageButton_Tapped(object sender, EventArgs e)
+        private async void ImageButton_Tapped(object sender, EventArgs e)
         {         
             DoAnimation(sender);
             //MasterDetailPage p = (MasterDetailPage)Application.Current.MainPage;            
@@ -143,8 +146,11 @@ namespace SmartBikeApp.View
             //caso contrário eu libero o desbloqueio da bicicleta.
             else
             {
-                bikeLocked = false;
+
+                bool travado =  await DataSeviceSmartBike.TravaBicicleta(usuarioLogado);
+                bikeLocked = !travado;
                 ImageButton.Source = @"qr_code.png";
+
                 //Método para desbloquear a bicicleta
                 //No retorno==tru mudar o ícone para o ícone padrão.
             }
@@ -178,7 +184,7 @@ namespace SmartBikeApp.View
                     {                   
                         var duration = TimeSpan.FromMilliseconds(200);
                         Vibration.Vibrate(duration);
-                        masterDt.Detail = new NavigationPage(new BicicletaInfoPage(masterDt)); 
+                        masterDt.Detail = new NavigationPage(new BicicletaInfoPage(masterDt, usuarioLogado, result.Text)); 
                     }
                     else
                     {

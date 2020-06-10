@@ -630,7 +630,6 @@ C:\Users\vinic\source\repos\SmartBikeApp\SmartBikeApp\SmartBikeApp.Android\obj\D
 C:\Users\vinic\source\repos\SmartBikeApp\SmartBikeApp\SmartBikeApp.Android\obj\Debug\90\res\drawable\goia3.png
 C:\Users\vinic\source\repos\SmartBikeApp\SmartBikeApp\SmartBikeApp.Android\obj\Debug\90\res\drawable\goia4.png
 C:\Users\vinic\source\repos\SmartBikeApp\SmartBikeApp\SmartBikeApp.Android\obj\Debug\90\res\drawable\goia5.png
-C:\Users\vinic\source\repos\SmartBikeApp\SmartBikeApp\SmartBikeApp.Android\obj\Debug\90\stamp\A095CDF2ACEB3EE6.stamp
 C:\Users\vinic\source\repos\SmartBikeApp\SmartBikeApp\SmartBikeApp.Android\obj\Debug\90\res\drawable\open_lock.png
 C:\Users\vinic\source\repos\SmartBikeApp\SmartBikeApp\SmartBikeApp.Android\obj\Debug\90\res\drawable\lock.png
 C:\Users\vinic\source\repos\SmartBikeApp\SmartBikeApp\SmartBikeApp.Android\obj\Debug\90\res\drawable\qr_code.png

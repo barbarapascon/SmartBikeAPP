@@ -16,6 +16,7 @@ namespace SmartBikeApp.Model
         private float totalRide;
         private string username;
         private string password;
+        private string token;
 
         public string IdUser { get => idUser; set => idUser = value; }
         public string FirstName { get => firstName; set => firstName = value; }
@@ -27,9 +28,10 @@ namespace SmartBikeApp.Model
         public float TotalRide { get => totalRide; set => totalRide = value; }
         public string Username { get => username; set => username = value; }
         public string Password { get => password; set => password = value; }
+        public string Token { get => token; set => token = value; }
 
 
-        public User (string IDUser, string FirstName, string Genero, DateTime Nascimento, string Email, string ImgBase64, float TotalRide, string Username, string Password)
+        public User (string IDUser, string FirstName, string Genero, DateTime Nascimento, string Email, string ImgBase64, float TotalRide, string Username, string Password, string Token)
         {
             this.IdUser = IDUser;
             this.FirstName = FirstName;
@@ -40,6 +42,7 @@ namespace SmartBikeApp.Model
             this.TotalRide = TotalRide;
             this.Username = Username;
             this.Password = Password;
+            this.token = Token;
         }
         public User() { }
     }

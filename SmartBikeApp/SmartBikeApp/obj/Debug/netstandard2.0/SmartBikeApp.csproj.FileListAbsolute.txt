@@ -16,6 +16,6 @@ C:\Users\vinic\source\repos\SmartBikeApp\SmartBikeApp\SmartBikeApp\obj\Debug\net
 C:\Users\vinic\source\repos\SmartBikeApp\SmartBikeApp\SmartBikeApp\obj\Debug\netstandard2.0\View\PerfilPage.xaml.g.cs
 C:\Users\vinic\source\repos\SmartBikeApp\SmartBikeApp\SmartBikeApp\obj\Debug\netstandard2.0\View\QRcodePage.xaml.g.cs
 C:\Users\vinic\source\repos\SmartBikeApp\SmartBikeApp\SmartBikeApp\obj\Debug\netstandard2.0\View\BicicletaInfoPage.xaml.g.cs
+C:\Users\vinic\source\repos\SmartBikeApp\SmartBikeApp\SmartBikeApp\obj\Debug\netstandard2.0\SmartBikeApp.csprojAssemblyReference.cache
 C:\Users\vinic\source\repos\SmartBikeApp\SmartBikeApp\SmartBikeApp\obj\Debug\netstandard2.0\SmartBikeApp.csproj.CoreCompileInputs.cache
 C:\Users\vinic\source\repos\SmartBikeApp\SmartBikeApp\SmartBikeApp\obj\Debug\netstandard2.0\XamlC.stamp
-C:\Users\vinic\source\repos\SmartBikeApp\SmartBikeApp\SmartBikeApp\obj\Debug\netstandard2.0\SmartBikeApp.csprojAssemblyReference.cache

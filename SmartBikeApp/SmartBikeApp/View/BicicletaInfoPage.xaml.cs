@@ -1,4 +1,5 @@
 ﻿using SmartBikeApp.Interfaces;
+using SmartBikeApp.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,18 +15,23 @@ namespace SmartBikeApp.View
     public partial class BicicletaInfoPage : ContentPage
     {
         readonly MasterDetailPage masterDt;
-        public BicicletaInfoPage(MasterDetailPage masterDetail)
+        User usuarioLogado;
+        string IdBike;
+        public BicicletaInfoPage(MasterDetailPage masterDetail, User userLogged, string idBike)
         {
+            IdBike = idBike;
+            usuarioLogado = userLogged;
             masterDt = masterDetail;
             InitializeComponent();
         }
 
-        private void LockBike_Tapped(object sender, EventArgs e)
+        private async void LockBike_Tapped(object sender, EventArgs e)
         {
             DoAnimation(sender);
+            bool trancado = await DataSeviceSmartBike.DestravaBicicleta(usuarioLogado, IdBike);
             DependencyService.Get<INotification>().CreateNotification("Obrigado por escolher uma e-bike.", "Pedale com segurança utilizando capacete.");
-            
-            masterDt.Detail = new NavigationPage(new FindBikesPage(masterDt, true));
+
+            masterDt.Detail = new NavigationPage(new FindBikesPage(masterDt, usuarioLogado, trancado));
         }
 
 
