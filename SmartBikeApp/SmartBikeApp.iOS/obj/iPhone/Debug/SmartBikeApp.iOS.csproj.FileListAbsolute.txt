@@ -67,3 +67,4 @@ C:\Users\vinic\source\repos\SmartBikeApp\SmartBikeApp\SmartBikeApp.iOS\bin\iPhon
 C:\Users\vinic\source\repos\SmartBikeApp\SmartBikeApp\SmartBikeApp.iOS\bin\iPhone\Debug\zxing.portable.dll
 C:\Users\vinic\source\repos\SmartBikeApp\SmartBikeApp\SmartBikeApp.iOS\bin\iPhone\Debug\ZXing.Net.Mobile.Forms.dll
 C:\Users\vinic\source\repos\SmartBikeApp\SmartBikeApp\SmartBikeApp.iOS\bin\iPhone\Debug\ZXing.Net.Mobile.Forms.iOS.dll
+C:\Users\vinic\source\repos\SmartBikeApp\SmartBikeApp\SmartBikeApp.iOS\bin\iPhone\Debug\System.Net.Http.dll

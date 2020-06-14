@@ -4814,15 +4814,16 @@ public final class R {
     public static final int notify_panel_notification_icon_bg=0x7f07009f;
     public static final int objetivoriding=0x7f0700a0;
     public static final int open_lock=0x7f0700a1;
-    public static final int pedalla_bike=0x7f0700a2;
-    public static final int perfil=0x7f0700a3;
-    public static final int qr_code=0x7f0700a4;
-    public static final int relogio=0x7f0700a5;
-    public static final int tooltip_frame_dark=0x7f0700a6;
-    public static final int tooltip_frame_light=0x7f0700a7;
-    public static final int trava=0x7f0700a8;
-    public static final int user=0x7f0700a9;
-    public static final int vini=0x7f0700aa;
+    public static final int parkedbicicleta=0x7f0700a2;
+    public static final int pedalla_bike=0x7f0700a3;
+    public static final int perfil=0x7f0700a4;
+    public static final int qr_code=0x7f0700a5;
+    public static final int relogio=0x7f0700a6;
+    public static final int tooltip_frame_dark=0x7f0700a7;
+    public static final int tooltip_frame_light=0x7f0700a8;
+    public static final int trava=0x7f0700a9;
+    public static final int user=0x7f0700aa;
+    public static final int vini=0x7f0700ab;
   }
   public static final class id {
     public static final int ALT=0x7f080000;

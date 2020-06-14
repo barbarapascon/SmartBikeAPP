@@ -46,15 +46,17 @@
                                 <Label x:Name="lbFabricante" Text="Pedalla" TextColor="Gray" FontSize="Medium" HorizontalTextAlignment="Start"/>
                                 <Label Text="Velocidade maxima" TextColor="#489760" FontSize="Small" FontAttributes="Bold" HorizontalTextAlignment="Start"/>
                                 <Label x:Name="lbSpeed" Text="25 km/h" TextColor="Gray" FontSize="Medium" HorizontalTextAlignment="Start"/>
-                                <Label Text="Alcance" TextColor="#489760" FontSize="Small" FontAttributes="Bold" HorizontalTextAlignment="Start"/>
-                                <Label x:Name="lbAlcance" Text="20 a 35 km" TextColor="Gray" FontSize="Medium" HorizontalTextAlignment="Start"/>
+                                <Label Text="Autonomia" TextColor="#489760" FontSize="Small" FontAttributes="Bold" HorizontalTextAlignment="Start"/>
+                                <Label x:Name="lbAutonomia" Text="20 a 35 km" TextColor="Gray" FontSize="Medium" HorizontalTextAlignment="Start"/>
                                 <Label Text="Peso da bicicleta" TextColor="#489760" FontSize="Small" FontAttributes="Bold" HorizontalTextAlignment="Start"/>
                                 <Label x:Name="lbPeso" Text="23.7 kg" TextColor="Gray" FontSize="Medium" HorizontalTextAlignment="Start"/>
                                 <Label Text="Limite de Peso" TextColor="#489760" FontSize="Small" FontAttributes="Bold" HorizontalTextAlignment="Start"/>
                                 <Label x:Name="lbLimitePeso" Text="120 kg" TextColor="Gray" FontSize="Medium" HorizontalTextAlignment="Start"/>
                                 <Label Text="Níveis de auxilio" TextColor="#489760" FontSize="Small" FontAttributes="Bold" HorizontalTextAlignment="Start"/>
                                 <Label x:Name="lbAuxilio" Text="3 níveis" TextColor="Gray" FontSize="Medium" HorizontalTextAlignment="Start"/>
-                            </StackLayout>
+                                <Label Text="Nível da bateria" TextColor="#489760" FontSize="Small" FontAttributes="Bold" HorizontalTextAlignment="Start"/>
+                                <Label x:Name="lbNivelBateria" Text="0" TextColor="Gray" FontSize="Medium" HorizontalTextAlignment="Start"/>
+                                </StackLayout>
 
                             <StackLayout Orientation="Vertical" HorizontalOptions="EndAndExpand" VerticalOptions="End"  Margin="0,0,20,10">
                                 <Frame CornerRadius="22"

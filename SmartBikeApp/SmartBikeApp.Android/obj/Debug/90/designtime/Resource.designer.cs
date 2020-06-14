@@ -11311,26 +11311,29 @@ namespace SmartBikeApp.Droid
 			// aapt resource value: 0x7F07009E
 			public const int open_lock = 2131165342;
 			
+			// aapt resource value: 0x7F07009F
+			public const int parkedbicicleta = 2131165343;
+			
 			// aapt resource value: 0x7F070003
 			public const int Pedalla_Bike = 2131165187;
 			
-			// aapt resource value: 0x7F07009F
-			public const int perfil = 2131165343;
-			
 			// aapt resource value: 0x7F0700A0
-			public const int qr_code = 2131165344;
+			public const int perfil = 2131165344;
 			
 			// aapt resource value: 0x7F0700A1
-			public const int relogio = 2131165345;
+			public const int qr_code = 2131165345;
 			
 			// aapt resource value: 0x7F0700A2
-			public const int tooltip_frame_dark = 2131165346;
+			public const int relogio = 2131165346;
 			
 			// aapt resource value: 0x7F0700A3
-			public const int tooltip_frame_light = 2131165347;
+			public const int tooltip_frame_dark = 2131165347;
 			
 			// aapt resource value: 0x7F0700A4
-			public const int trava = 2131165348;
+			public const int tooltip_frame_light = 2131165348;
+			
+			// aapt resource value: 0x7F0700A5
+			public const int trava = 2131165349;
 			
 			// aapt resource value: 0x7F070004
 			public const int User = 2131165188;

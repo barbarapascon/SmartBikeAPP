@@ -23,6 +23,7 @@ namespace SmartBikeApp.View
             usuarioLogado = userLogged;
             masterDt = masterDetail;
             InitializeComponent();
+            PreaparaInformacoesBike(IdBike, usuarioLogado);
         }
 
         private async void LockBike_Tapped(object sender, EventArgs e)
@@ -63,5 +64,17 @@ namespace SmartBikeApp.View
             }
         }
 
+
+        private async void PreaparaInformacoesBike(string idBike, User user)
+        {
+            Bike bike = await DataSeviceSmartBike.GetBikeInfo(idBike, user);
+            lbFabricante.Text = bike.Fabricante;
+            lbSpeed.Text = String.Format("{0} km/h", bike.Speed.ToString());
+            lbAutonomia.Text = bike.Autonomia;
+            lbPeso.Text = String.Format("{0} kg", bike.PesoBicicleta);
+            lbLimitePeso.Text = String.Format("{0} kg", bike.PesoMaximo);
+            lbAuxilio.Text = String.Format("{0} níveis", bike.NivelDeAuxilio);
+            lbNivelBateria.Text = String.Format("{0} %", bike.BatteryLevel * 100);
+        }
     }
 }

@@ -37,22 +37,8 @@ namespace SmartBikeApp.View
             NavigationPage.SetHasNavigationBar(this, true);
             this.BindingContext = new Tempo();
 
-            SettingPins p = new SettingPins();
+            SetPins();
 
-            foreach (Pin pino in p.pins)
-            {
-                pino.InfoWindowClicked += async (s, args) =>
-                {
-                    Pin pinoClicado = ((Pin)s);
-
-                    double distance = Math.Round(Distance.BetweenPositions(posicaoAtual, pinoClicado.Position).Meters, 0);
-
-                    string pinName = pinoClicado.Label;
-                    await DisplayAlert($"Distancia até o bicicletário {pinName.ToLower()}.", String.Format("Você está a {0} metros de distância.", distance), "Ok");
-
-                };
-                map.Pins.Add(pino);
-            }
             if (bikeLocked)
             {
                 ImageButton.Source = @"lock.png";
@@ -85,6 +71,28 @@ namespace SmartBikeApp.View
             catch (Exception err)
             {
                 await DisplayAlert("Erro no serviço de previsão do tempo", err.Message, "OK");
+            }
+        }
+
+
+        private async void SetPins()
+        {
+            List<Coordenada> CoordenadasBikes = await DataSeviceSmartBike.RetornaBicicletasDisponiveis(usuarioLogado);
+            SettingPins p = new SettingPins(CoordenadasBikes);
+
+            foreach (Pin pino in p.pins)
+            {
+                pino.InfoWindowClicked += async (s, args) =>
+                {
+                    Pin pinoClicado = ((Pin)s);
+
+                    double distance = Math.Round(Distance.BetweenPositions(posicaoAtual, pinoClicado.Position).Meters, 0);
+
+                    string pinName = pinoClicado.Label;
+                    await DisplayAlert($"Distancia até o bicicletário {pinName.ToLower()}.", String.Format("Você está a {0} metros de distância.", distance), "Ok");
+
+                };
+                map.Pins.Add(pino);
             }
         }
 
@@ -133,11 +141,11 @@ namespace SmartBikeApp.View
 
 
         private async void ImageButton_Tapped(object sender, EventArgs e)
-        {         
+        {
             DoAnimation(sender);
             //MasterDetailPage p = (MasterDetailPage)Application.Current.MainPage;            
             //p.Detail = new NavigationPage(new QRcodePage());          
-            
+
             //Se a bicicleta não estiver bloqueada eu libero a realização de um novo scanner
             if (!bikeLocked)
             {
@@ -147,14 +155,14 @@ namespace SmartBikeApp.View
             else
             {
 
-                bool travado =  await DataSeviceSmartBike.TravaBicicleta(usuarioLogado);
+                bool travado = await DataSeviceSmartBike.TravaBicicleta(usuarioLogado);
                 bikeLocked = !travado;
                 ImageButton.Source = @"qr_code.png";
 
                 //Método para desbloquear a bicicleta
                 //No retorno==tru mudar o ícone para o ícone padrão.
             }
-            
+
         }
 
         private async void ScannerAsync()
@@ -175,23 +183,23 @@ namespace SmartBikeApp.View
             scannerPage.ToolbarItems.Add(item);
             await masterDt.Detail.Navigation.PopToRootAsync();
             scannerPage.OnScanResult += (result) =>
-            {               
+            {
                 scannerPage.IsScanning = false;
                 Device.BeginInvokeOnMainThread(() =>
                 {
                     //Navigation.PopAsync();
                     if (result.Text.Contains("urn:ngsi-ld:bicicleta:"))
-                    {                   
+                    {
                         var duration = TimeSpan.FromMilliseconds(200);
                         Vibration.Vibrate(duration);
-                        masterDt.Detail = new NavigationPage(new BicicletaInfoPage(masterDt, usuarioLogado, result.Text)); 
+                        masterDt.Detail = new NavigationPage(new BicicletaInfoPage(masterDt, usuarioLogado, result.Text));
                     }
                     else
                     {
                         var duration = TimeSpan.FromMilliseconds(500);
                         Vibration.Vibrate(duration);
                         masterDt.Detail.Navigation.PopToRootAsync();
-                        DisplayAlert("valor do QRcodeLidoInválido", result.Text, "OK");                        
+                        DisplayAlert("valor do QRcodeLidoInválido", result.Text, "OK");
                     }
                 });
             };

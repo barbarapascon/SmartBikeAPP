@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -18,6 +19,8 @@ namespace SmartBikeApp.Model
         private string password;
         private string token;
 
+
+        public string Status { get; set; }
         public string IdUser { get => idUser; set => idUser = value; }
         public string FirstName { get => firstName; set => firstName = value; }
         public string LastName { get => lastName; set => lastName = value; }
@@ -29,9 +32,10 @@ namespace SmartBikeApp.Model
         public string Username { get => username; set => username = value; }
         public string Password { get => password; set => password = value; }
         public string Token { get => token; set => token = value; }
+        public string RefPermission { get; set; }
 
 
-        public User (string IDUser, string FirstName, string Genero, DateTime Nascimento, string Email, string ImgBase64, float TotalRide, string Username, string Password, string Token)
+        public User(string IDUser, string FirstName, string Genero, DateTime Nascimento, string Email, string ImgBase64, float TotalRide, string Username, string Password, string Token)
         {
             this.IdUser = IDUser;
             this.FirstName = FirstName;

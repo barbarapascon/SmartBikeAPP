@@ -34,13 +34,22 @@ namespace SmartBikeApp.View
             tapDestination_Tapped(new Object(), new EventArgs());          
         }
 
-        private void NewRide_Tapped(object sender, EventArgs e)
+        private async void NewRide_Tapped(object sender, EventArgs e)
         {
+            bool emCorrida = await DataSeviceSmartBike.VerificaUsuarioCorrida(usuarioLogado);
             DoAnimation(sender);
-            ScannerAsync();            
+            if (emCorrida)
+            {
+                await DisplayAlert("Você já está em uma corrida!", "Para realizar uma nova corrida, por favor termine a corrida atual.", "OK");
+            }
+            else
+            {
+                ScannerAsync();
+            }
             IsPresented = false;
         }
 
+    
         private void tapPerfil_Tapped(object sender, EventArgs e)
         {
             DoAnimation(sender);
@@ -52,7 +61,7 @@ namespace SmartBikeApp.View
         private void tapHistory_Tapped(object sender, EventArgs e)
         {
             DoAnimation(sender);
-            Detail = new NavigationPage(new HistoricoPage());
+            Detail = new NavigationPage(new HistoricoPage(usuarioLogado));
             IsPresented = false;
         }
 
@@ -77,7 +86,6 @@ namespace SmartBikeApp.View
 
             //Application.Current.MainPage = new LoginPage();
         }
-
 
         /// <summary>
         /// Animação para fazer com que os frames e os StackLayouts clicáveis, tenham animação parecida com a animação de botões.
@@ -155,5 +163,7 @@ namespace SmartBikeApp.View
             User_image.Source = ImageSource.FromStream(() => new MemoryStream(Base64Stream));
 
         }
+
+        
     }
 }

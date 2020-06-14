@@ -15,8 +15,30 @@
     <ContentPage.Content>
 
         <ScrollView>
-        <StackLayout>
-            <Frame x:Name="frHistory1"
+            <StackLayout x:Name="stackHistorico" BackgroundColor="WhiteSmoke">
+
+
+                <!--
+                <Frame x:Name="frHistory1"
+                               CornerRadius="15"
+                               Padding="0"
+                               Margin="10,10,10,0"
+                               HorizontalOptions="CenterAndExpand" 
+                               VerticalOptions="CenterAndExpand"
+                               IsClippedToBounds="True"
+                               HasShadow="True">
+                    <StackLayout Orientation="Vertical"  Padding="10,15">
+                        <Label Text="Você não realizou nenhuma corrida!" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="Large" TextColor="#0583F2" Margin="5, 0, 5, 0"/>
+                        <Label Text="Utilize uma de nossas e-bikes para chegar ao seu destinho mais rápido!" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="Medium" TextColor="#0583F2" Margin="5, 0, 5, 0"/>
+                        <StackLayout Orientation="Horizontal">
+                            <Image Source="parkedbicicleta.png"  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"  Aspect="AspectFit" HeightRequest="300" WidthRequest="300" Margin="10,0,5,0"/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+                
+                
+                
+                <Frame x:Name="frHistory1"
                                CornerRadius="15"
                                HeightRequest="130"
                                WidthRequest="1500"
@@ -24,22 +46,22 @@
                                Margin="10,10,10,0"
                                HorizontalOptions="Start" IsClippedToBounds="True"
                                HasShadow="True" >
-                <StackLayout Orientation="Vertical"  Padding="10,15">
-                    
-                    <StackLayout Orientation="Horizontal">
-                        <Image Source="bicicleta2.png"  HorizontalOptions="Start" VerticalOptions="Start"  Aspect="AspectFill" HeightRequest="45" WidthRequest="45" Margin="10,0,5,0"/>
-                        <StackLayout Orientation="Vertical" HorizontalOptions="StartAndExpand" Margin="15,0">
-                            <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" VerticalOptions="Start">
-                                <Image Source="desbloqueado.png"    Aspect="AspectFit" HeightRequest="20" WidthRequest="20" Margin="5,0"/>
-                                <Label Text="Entrada do estacionamento"  FontSize="12.5" FontAttributes="Italic" TextColor="Gray" VerticalOptions="Center"/>                                
-                            </StackLayout>
-                            <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" VerticalOptions="Start">
-                                <Image Source="trava.png"  HorizontalOptions="Start" VerticalOptions="Start"  Aspect="AspectFill" HeightRequest="20" WidthRequest="20" Margin="5,0"/>
-                                <Label Text="Proximo ao bloco da FTT" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"  FontSize="12.5" FontAttributes="Italic" TextColor="Gray" />
-                            </StackLayout>
+                    <StackLayout Orientation="Vertical"  Padding="10,15">
+
+                        <StackLayout Orientation="Horizontal">
+                            <Image Source="bicicleta2.png"  HorizontalOptions="Start" VerticalOptions="Start"  Aspect="AspectFill" HeightRequest="45" WidthRequest="45" Margin="10,0,5,0"/>
+                            <StackLayout Orientation="Vertical" HorizontalOptions="StartAndExpand" Margin="15,0">
+                                <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" VerticalOptions="Start">
+                                    <Image Source="desbloqueado.png"    Aspect="AspectFit" HeightRequest="20" WidthRequest="20" Margin="5,0"/>
+                                    <Label Text="Entrada do estacionamento"  FontSize="12.5" FontAttributes="Italic" TextColor="Gray" VerticalOptions="Center"/>
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" VerticalOptions="Start">
+                                    <Image Source="trava.png"  HorizontalOptions="Start" VerticalOptions="Start"  Aspect="AspectFill" HeightRequest="20" WidthRequest="20" Margin="5,0"/>
+                                    <Label Text="Proximo ao bloco da FTT" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"  FontSize="12.5" FontAttributes="Italic" TextColor="Gray" />
+                                </StackLayout>
                                 <Label Text="15 de Fevereiro de 2020, São Bernardo do Campo"  HorizontalOptions="Start" VerticalOptions="Center"  FontSize="9" FontAttributes="Italic" TextColor="#0583F2" Margin="4,0"/>
+                            </StackLayout>
                         </StackLayout>
-                    </StackLayout>
 
                         <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand" Margin="0,10, 10, 5">
                             <Image Source="relogio.png"    HeightRequest="20" WidthRequest="20" />
@@ -48,7 +70,7 @@
                             <Label Text="2.5 km" FontSize="Small" TextColor="Gray" Margin="5, 0, 5, 0"/>
                         </StackLayout>
                     </StackLayout>
-            </Frame>
+                </Frame>
 
                 <Frame x:Name="frHistory2"
                                CornerRadius="15"
@@ -184,10 +206,10 @@
                             <Image Source="estrada.png"  HeightRequest="20" WidthRequest="20"/>
                             <Label Text="2.5 km" FontSize="Small" TextColor="Gray" Margin="5, 0, 5, 0"/>
                         </StackLayout>
-                        
+
                     </StackLayout>
                 </Frame>
-
+                -->
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

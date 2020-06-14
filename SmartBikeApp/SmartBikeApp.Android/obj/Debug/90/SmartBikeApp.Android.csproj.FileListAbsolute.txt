@@ -643,3 +643,5 @@ C:\Users\vinic\source\repos\SmartBikeApp\SmartBikeApp\SmartBikeApp.Android\obj\D
 C:\Users\vinic\source\repos\SmartBikeApp\SmartBikeApp\SmartBikeApp.Android\obj\Debug\90\res\drawable\perfil.png
 C:\Users\vinic\source\repos\SmartBikeApp\SmartBikeApp\SmartBikeApp.Android\obj\Debug\90\res\drawable\objetivoriding.png
 C:\Users\vinic\source\repos\SmartBikeApp\SmartBikeApp\SmartBikeApp.Android\obj\Debug\90\res\drawable\forgotpassword.jpg
+C:\Users\vinic\source\repos\SmartBikeApp\SmartBikeApp\SmartBikeApp.Android\obj\Debug\90\res\drawable\parkedbicicleta.png
+C:\Users\vinic\source\repos\SmartBikeApp\SmartBikeApp\SmartBikeApp.Android\obj\Debug\90\stamp\A095CDF2ACEB3EE6.stamp
