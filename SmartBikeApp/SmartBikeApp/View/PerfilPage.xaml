@@ -60,10 +60,10 @@
                     <Label Text="E-mail" TextColor="#0583F2" FontSize="Small" HorizontalOptions="Start" VerticalOptions="StartAndExpand" FontAttributes="Bold"/>
                     <Label x:Name="email" Text = "viniciusdeandrade96@gmail.com" TextColor="Black" HorizontalOptions="Start" FontSize="Medium" FontAttributes="Italic"/>
                 </StackLayout>
-                <StackLayout Orientation="Vertical" Padding="10,3">
+                <!--<StackLayout Orientation="Vertical" Padding="10,3">
                     <Label Text="Distância total percorrida" TextColor="#0583F2" FontSize="Small" HorizontalOptions="Start" VerticalOptions="StartAndExpand" FontAttributes="Bold"/>
                     <Label x:Name="totalPedalado" Text = "10 km" TextColor="Black" HorizontalOptions="Start" FontSize="Medium" FontAttributes="Italic"/>
-                </StackLayout>
+                </StackLayout>-->
             </StackLayout>
         </Grid>
     </ContentPage.Content>

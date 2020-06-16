@@ -34,7 +34,7 @@ namespace SmartBikeApp.View
                 Genero.Text = "Não é binário";
             }
             email.Text = userLogged.Email;
-            totalPedalado.Text = String.Format("{0} km",userLogged.TotalRide.ToString());
+            //totalPedalado.Text = String.Format("{0} km",userLogged.TotalRide.ToString());
             byte[] Base64Stream = Convert.FromBase64String(userLogged.ImgBase64);
             User_image.Source = ImageSource.FromStream(() => new MemoryStream(Base64Stream));
             

@@ -102,7 +102,7 @@ namespace SmartBikeApp.View
                                  {
                                      Orientation= StackOrientation.Vertical,
                                      HorizontalOptions=LayoutOptions.StartAndExpand,
-                                     Margin=new Thickness(15,0,15,0),
+                                     Margin=new Thickness(30,0,15,0),
                                      Children =
                                      {
                                          new StackLayout
@@ -120,7 +120,7 @@ namespace SmartBikeApp.View
                                                      Margin=new Thickness(5,0),
                                                  },
                                                  new Label {
-                                                     Text="Entrada do estacionamento",
+                                                     Text="Localização desconhecida",
                                                      FontSize=12.5,
                                                      FontAttributes= FontAttributes.Italic,
                                                      TextColor=Color.Gray,
@@ -146,7 +146,7 @@ namespace SmartBikeApp.View
                                                      Margin=new Thickness(5,0),
                                                  },
                                                  new Label {
-                                                     Text="Proximo ao bloco da FTT",
+                                                     Text="Localização desconhecida",
                                                      HorizontalOptions= LayoutOptions.CenterAndExpand,
                                                      VerticalOptions=LayoutOptions.CenterAndExpand,
                                                      FontSize=12.5,
@@ -174,7 +174,7 @@ namespace SmartBikeApp.View
                         {
                             Orientation=StackOrientation.Horizontal,
                             HorizontalOptions=LayoutOptions.EndAndExpand,
-                            Margin=new Thickness(0,10, 10, 5),
+                            Margin=new Thickness(0,10, 15, 5),
                             Children = {
                                 new Image {
                                     Source = @"relogio.png",
@@ -188,7 +188,7 @@ namespace SmartBikeApp.View
                                    TextColor=Color.Gray,
                                    Margin=new Thickness(5, 0, 10, 0),
                                 },
-                                 new Image {
+                                /* new Image {
                                     Source = @"estrada.png",
                                     HeightRequest=20,
                                     WidthRequest=20,
@@ -200,7 +200,7 @@ namespace SmartBikeApp.View
                                     FontSize= 15,
                                     TextColor=Color.Gray,
                                     Margin=new Thickness(5, 0, 5, 0)
-                                },
+                                },*/
                              }
                         }
 

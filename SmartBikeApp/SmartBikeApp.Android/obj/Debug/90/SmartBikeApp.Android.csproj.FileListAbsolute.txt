@@ -55,7 +55,6 @@ C:\Users\vinic\source\repos\SmartBikeApp\SmartBikeApp\SmartBikeApp.Android\obj\D
 C:\Users\vinic\source\repos\SmartBikeApp\SmartBikeApp\SmartBikeApp.Android\obj\Debug\90\res\mipmap-xxxhdpi\icon.png
 C:\Users\vinic\source\repos\SmartBikeApp\SmartBikeApp\SmartBikeApp.Android\obj\Debug\90\res\mipmap-xxxhdpi\launcher_foreground.png
 C:\Users\vinic\source\repos\SmartBikeApp\SmartBikeApp\SmartBikeApp.Android\obj\Debug\90\res\drawable\user.ico
-C:\Users\vinic\source\repos\SmartBikeApp\SmartBikeApp\SmartBikeApp.Android\obj\Debug\90\res\drawable\vini.jpg
 C:\Users\vinic\source\repos\SmartBikeApp\SmartBikeApp\SmartBikeApp.Android\obj\Debug\90\res\drawable\bloqueio.ico
 C:\Users\vinic\source\repos\SmartBikeApp\SmartBikeApp\SmartBikeApp.Android\obj\Debug\90\res\drawable\destination_1.png
 C:\Users\vinic\source\repos\SmartBikeApp\SmartBikeApp\SmartBikeApp.Android\obj\Debug\90\res\drawable\localizacaoatual.ico

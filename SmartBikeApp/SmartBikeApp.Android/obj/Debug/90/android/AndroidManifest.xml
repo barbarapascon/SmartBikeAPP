@@ -33,7 +33,7 @@
         <action android:name="com.google.android.c2dm.intent.RECEIVE" />
       </intent-filter>
     </receiver>
-    <activity android:name="crc64991dfd3c6994f003.MainActivity" android:configChanges="orientation|screenSize" android:icon="@mipmap/icon" android:label="SmartBike" android:screenOrientation="portrait" android:theme="@style/MainTheme">
+    <activity android:name="crc64991dfd3c6994f003.MainActivity" android:configChanges="orientation|screenSize" android:icon="@mipmap/icon" android:label="Smart Bike" android:screenOrientation="portrait" android:theme="@style/MainTheme">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />

@@ -41,11 +41,11 @@
 
                 <Button x:Name="Logar" Text="LOGIN" TextColor="White" BackgroundColor="#4A93EB" Grid.Row="2" Grid.ColumnSpan="3" VerticalOptions="EndAndExpand" HorizontalOptions="CenterAndExpand" Margin="0,0,0, 20" Clicked="Logar_Clicked"/>
                 <!--<Grid RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}">-->
-                <Label Text="Esqueci minha senha." TextColor="DarkRed" TextDecorations="Underline" FontSize="Subtitle" FontAttributes="Bold" Grid.Row="3"  Grid.ColumnSpan="3" VerticalOptions="Start" HorizontalOptions="CenterAndExpand" Margin="0,0,0,30">
+                <!--<Label Text="Esqueci minha senha." TextColor="DarkRed" TextDecorations="Underline" FontSize="Subtitle" FontAttributes="Bold" Grid.Row="3"  Grid.ColumnSpan="3" VerticalOptions="Start" HorizontalOptions="CenterAndExpand" Margin="0,0,0,30">
                     <Label.GestureRecognizers>
                         <TapGestureRecognizer x:Name="lbEsqueciSenha" Tapped="LbEsqueciSenha_Tapped" NumberOfTapsRequired="1"/>
                     </Label.GestureRecognizers>
-                </Label>               
+                </Label>-->               
             </Grid>
             <ActivityIndicator x:Name="indicator" IsRunning="False" IsEnabled="False" IsVisible="False" Color="Green" BackgroundColor="Transparent" Opacity="0.9" HeightRequest="50" WidthRequest="50" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"  RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}" Grid.Row="0" Grid.Column="0" />
         </Grid>
