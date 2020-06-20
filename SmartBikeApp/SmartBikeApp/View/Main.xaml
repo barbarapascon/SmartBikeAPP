@@ -24,7 +24,7 @@
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
 
-                <Grid x:Name="TopMenu" Grid.Row="0" BackgroundColor="#4BA9F5">
+                <Grid x:Name="TopMenu" Grid.Row="0" BackgroundColor="#51C3AA">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
@@ -138,10 +138,10 @@
                         <ColumnDefinition Width="*"/>
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
-                    <Image Source="genericBike.jpg" Aspect="AspectFit" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}" VerticalOptions="End" HorizontalOptions="End" Grid.Row="1" Grid.Column="0"/>
+                    <Image Source="ico.png" Aspect="AspectFit" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}" VerticalOptions="End" HorizontalOptions="End" Grid.Row="1" Grid.Column="0"/>
                 </Grid>
 
-                <StackLayout Orientation="Horizontal" Grid.Row="3" BackgroundColor="#4BA9F5">
+                <StackLayout Orientation="Horizontal" Grid.Row="3" BackgroundColor="#51C3AA">
                     
                     <StackLayout Orientation="Vertical" Padding="0, 5">
                         <StackLayout.GestureRecognizers >

@@ -18,3 +18,4 @@ C:\Users\vinic\source\repos\SmartBikeApp\SmartBikeApp\SmartBikeApp\obj\Release\n
 C:\Users\vinic\source\repos\SmartBikeApp\SmartBikeApp\SmartBikeApp\obj\Release\netstandard2.0\SmartBikeApp.dll
 C:\Users\vinic\source\repos\SmartBikeApp\SmartBikeApp\SmartBikeApp\obj\Release\netstandard2.0\ref\SmartBikeApp.dll
 C:\Users\vinic\source\repos\SmartBikeApp\SmartBikeApp\SmartBikeApp\obj\Release\netstandard2.0\SmartBikeApp.pdb
+C:\Users\vinic\source\repos\SmartBikeApp\SmartBikeApp\SmartBikeApp\obj\Release\netstandard2.0\SmartBikeApp.csprojAssemblyReference.cache

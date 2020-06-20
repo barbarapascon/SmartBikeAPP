@@ -41,7 +41,7 @@
                        VerticalOptions="Start"
                        HorizontalOptions="Center"
                        Margin="0,15,0,10"
-                       TextColor="#0583F2"/>
+                       TextColor="#A258C7"/>
                         <Label Text="Bárbara Pascon de Azevedo Marques "
                            FontSize="Small"
                            HorizontalOptions="Center"
@@ -58,7 +58,7 @@
                            FontSize="Small"
                            HorizontalOptions="Center"
                            TextColor="Gray"/>
-                        <Image Source="genericBike.jpg" Aspect="AspectFit" HeightRequest="100" WidthRequest="100" VerticalOptions="EndAndExpand" HorizontalOptions="EndAndExpand"/>
+                        <Image Source="ico.png" Aspect="AspectFit" HeightRequest="100" WidthRequest="100" VerticalOptions="EndAndExpand" HorizontalOptions="EndAndExpand"/>
                     </StackLayout>                    
                 </Frame>
 
@@ -75,7 +75,7 @@
                        FontSize="Title"
                        VerticalOptions="Start"
                        HorizontalOptions="Center"                       
-                       TextColor="#0583F2"/>
+                       TextColor="#A258C7"/>
                 </Frame>
             </RelativeLayout>            
         </StackLayout>

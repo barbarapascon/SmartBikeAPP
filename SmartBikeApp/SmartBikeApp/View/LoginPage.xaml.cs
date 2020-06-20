@@ -5,8 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
-
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -30,22 +29,31 @@ namespace SmartBikeApp
         {
             try
             {
-                AtivaIndicador();
-                User usuario = await DataSeviceSmartBike.GetUserFromAPIAsync(Username.Text, Password.Text);               
-                NavigationPage.SetHasNavigationBar(this, true);
-                
-                await Navigation.PushModalAsync(new Main(usuario));
-                DesativaIndicador();
+                var internet = Connectivity.NetworkAccess;
+
+                if (internet == NetworkAccess.Internet)
+                {
+                    AtivaIndicador();
+                    User usuario = await DataSeviceSmartBike.GetUserFromAPIAsync(Username.Text, Password.Text);
+                    NavigationPage.SetHasNavigationBar(this, true);
+
+                    await Navigation.PushModalAsync(new Main(usuario));
+                    DesativaIndicador();
+                }
+                else
+                {
+                    await DisplayAlert("Falha de rede.", "Você não possui acesso à Internet. Verifique o acesso e tente novamente.", "OK");
+                }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 DesativaIndicador();
-                await DisplayAlert("Usuário incorreto", "Usuário ou senha incorretos" + ex.Message, "OK");
+                await DisplayAlert("Falha na autenticação.", "Usuário ou senha incorretos", "OK");
             }
-            
+
         }
         private void AtivaIndicador()
-        {            
+        {
             indicator.IsVisible = true;
             indicator.IsRunning = true;
             indicator.IsEnabled = true;

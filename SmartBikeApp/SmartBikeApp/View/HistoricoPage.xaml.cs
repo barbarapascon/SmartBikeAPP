@@ -162,7 +162,7 @@ namespace SmartBikeApp.View
                                             VerticalOptions= LayoutOptions.Center,
                                             FontSize=9,
                                             FontAttributes=  FontAttributes.Italic,
-                                            TextColor= Color.FromHex("#0583F2"),
+                                            TextColor= Color.FromHex("#A258C7"),
                                             Margin=new Thickness(4,0,4,0)
                                         }
                                     }
@@ -233,7 +233,7 @@ namespace SmartBikeApp.View
                             VerticalTextAlignment = TextAlignment.Center,
                             HorizontalTextAlignment = TextAlignment.Center,
                             FontSize = 20,
-                            TextColor = Color.FromHex("#0583F2"),
+                            TextColor = Color.FromHex("#A258C7"),
                             Margin = new Thickness(5, 0, 5, 0)
                         },
                         new Label {
@@ -241,7 +241,7 @@ namespace SmartBikeApp.View
                             VerticalTextAlignment = TextAlignment.Center,
                             HorizontalTextAlignment = TextAlignment.Center,
                             FontSize = 15,
-                            TextColor = Color.FromHex("#0583F2"),
+                            TextColor = Color.FromHex("#A258C7"),
                             Margin = new Thickness(5, 0, 5, 0)
                         },
 

@@ -37,24 +37,24 @@
                                 <Image Source="goia4.png"/>
                                 <Image Source="goia5.png"/>                                
                             </StackLayout>
-                        </ScrollView>                        
-                           <Label x:Name="lbModelo" Text="Gioia" TextColor="#28BC5A" FontSize="Title" HorizontalTextAlignment="Center"/>
+                        </ScrollView>
+                            <Label x:Name="lbModelo" Text="Gioia" TextColor="#A258C7" FontSize="Title" HorizontalTextAlignment="Center"/>
                         
                         <StackLayout Orientation="Horizontal">
                             <StackLayout Orientation="Vertical" Margin="25,0,0,10">
-                                <Label Text="Fabricante" TextColor="#489760" FontSize="Small" FontAttributes="Bold" HorizontalTextAlignment="Start"/>
+                                    <Label Text="Fabricante" TextColor="#51C3AA" FontSize="Small" FontAttributes="Bold" HorizontalTextAlignment="Start"/>
                                 <Label x:Name="lbFabricante" Text="Pedalla" TextColor="Gray" FontSize="Medium" HorizontalTextAlignment="Start"/>
-                                <Label Text="Velocidade maxima" TextColor="#489760" FontSize="Small" FontAttributes="Bold" HorizontalTextAlignment="Start"/>
+                                    <Label Text="Velocidade maxima" TextColor="#51C3AA" FontSize="Small" FontAttributes="Bold" HorizontalTextAlignment="Start"/>
                                 <Label x:Name="lbSpeed" Text="25 km/h" TextColor="Gray" FontSize="Medium" HorizontalTextAlignment="Start"/>
-                                <Label Text="Autonomia" TextColor="#489760" FontSize="Small" FontAttributes="Bold" HorizontalTextAlignment="Start"/>
+                                    <Label Text="Autonomia" TextColor="#51C3AA" FontSize="Small" FontAttributes="Bold" HorizontalTextAlignment="Start"/>
                                 <Label x:Name="lbAutonomia" Text="20 a 35 km" TextColor="Gray" FontSize="Medium" HorizontalTextAlignment="Start"/>
-                                <Label Text="Peso da bicicleta" TextColor="#489760" FontSize="Small" FontAttributes="Bold" HorizontalTextAlignment="Start"/>
+                                    <Label Text="Peso da bicicleta" TextColor="#51C3AA" FontSize="Small" FontAttributes="Bold" HorizontalTextAlignment="Start"/>
                                 <Label x:Name="lbPeso" Text="23.7 kg" TextColor="Gray" FontSize="Medium" HorizontalTextAlignment="Start"/>
-                                <Label Text="Limite de Peso" TextColor="#489760" FontSize="Small" FontAttributes="Bold" HorizontalTextAlignment="Start"/>
+                                    <Label Text="Limite de Peso" TextColor="#51C3AA" FontSize="Small" FontAttributes="Bold" HorizontalTextAlignment="Start"/>
                                 <Label x:Name="lbLimitePeso" Text="120 kg" TextColor="Gray" FontSize="Medium" HorizontalTextAlignment="Start"/>
-                                <Label Text="Níveis de auxilio" TextColor="#489760" FontSize="Small" FontAttributes="Bold" HorizontalTextAlignment="Start"/>
+                                    <Label Text="Níveis de auxilio" TextColor="#51C3AA" FontSize="Small" FontAttributes="Bold" HorizontalTextAlignment="Start"/>
                                 <Label x:Name="lbAuxilio" Text="3 níveis" TextColor="Gray" FontSize="Medium" HorizontalTextAlignment="Start"/>
-                                <Label Text="Nível da bateria" TextColor="#489760" FontSize="Small" FontAttributes="Bold" HorizontalTextAlignment="Start"/>
+                                    <Label Text="Nível da bateria" TextColor="#51C3AA" FontSize="Small" FontAttributes="Bold" HorizontalTextAlignment="Start"/>
                                 <Label x:Name="lbNivelBateria" Text="0" TextColor="Gray" FontSize="Medium" HorizontalTextAlignment="Start"/>
                                 </StackLayout>
 
@@ -72,7 +72,7 @@
                                     </Frame.GestureRecognizers>
                                     <Image x:Name="ImageButton" Source="open_lock.png"  BackgroundColor="LightGray" HeightRequest="45" WidthRequest="45" />
                                 </Frame>
-                                <Label Text="Clique para desbloquear a bicicleta" FontSize="Micro" TextColor="#489760"  WidthRequest="115" 
+                                    <Label Text="Clique para desbloquear a bicicleta" FontSize="Micro" TextColor="#51C3AA"  WidthRequest="115" 
                                        XAlign="Center"/>
                             </StackLayout>
                         </StackLayout>

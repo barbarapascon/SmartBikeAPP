@@ -41,23 +41,23 @@
             
             <StackLayout Grid.Row="1" Orientation="Vertical">
                 <StackLayout Orientation="Vertical" Padding="10,5">
-                    <Label Text="Nome" TextColor="#0583F2" FontSize="Small" HorizontalOptions="Start" VerticalOptions="StartAndExpand" FontAttributes="Bold"/>
+                    <Label Text="Nome" TextColor="#FFA36A" FontSize="Small" HorizontalOptions="Start" VerticalOptions="StartAndExpand" FontAttributes="Bold"/>
                     <Label x:Name="FirstName" Text = "Vinícius" TextColor="Black" HorizontalOptions="Start" FontSize="Medium" FontAttributes="Italic"/>
                 </StackLayout>
                 <StackLayout Orientation="Vertical" Padding="10,3">
-                    <Label Text="Sobrenome" TextColor="#0583F2" FontSize="Small" HorizontalOptions="Start" VerticalOptions="StartAndExpand" FontAttributes="Bold"/>
+                    <Label Text="Sobrenome" TextColor="#FFA36A" FontSize="Small" HorizontalOptions="Start" VerticalOptions="StartAndExpand" FontAttributes="Bold"/>
                     <Label x:Name="LastName" Text = "Andrade" TextColor="Black" HorizontalOptions="Start" FontSize="Medium" FontAttributes="Italic"/>
                 </StackLayout>
                 <StackLayout Orientation="Vertical" Padding="10,3">
-                    <Label Text="Idade" TextColor="#0583F2" FontSize="Small" HorizontalOptions="Start" VerticalOptions="StartAndExpand" FontAttributes="Bold"/>
+                    <Label Text="Idade" TextColor="#FFA36A" FontSize="Small" HorizontalOptions="Start" VerticalOptions="StartAndExpand" FontAttributes="Bold"/>
                     <Label x:Name="idade" Text = "23 anos" TextColor="Black" HorizontalOptions="Start" FontSize="Medium" FontAttributes="Italic"/>
                 </StackLayout>
                 <StackLayout Orientation="Vertical" Padding="10,3">
-                    <Label Text="Genero" TextColor="#0583F2" FontSize="Small" HorizontalOptions="Start" VerticalOptions="StartAndExpand" FontAttributes="Bold"/>
+                    <Label Text="Genero" TextColor="#FFA36A" FontSize="Small" HorizontalOptions="Start" VerticalOptions="StartAndExpand" FontAttributes="Bold"/>
                     <Label x:Name="Genero" Text = "Masculino" TextColor="Black" HorizontalOptions="Start" FontSize="Medium" FontAttributes="Italic"/>
                 </StackLayout>               
                 <StackLayout Orientation="Vertical" Padding="10,3">
-                    <Label Text="E-mail" TextColor="#0583F2" FontSize="Small" HorizontalOptions="Start" VerticalOptions="StartAndExpand" FontAttributes="Bold"/>
+                    <Label Text="E-mail" TextColor="#FFA36A" FontSize="Small" HorizontalOptions="Start" VerticalOptions="StartAndExpand" FontAttributes="Bold"/>
                     <Label x:Name="email" Text = "viniciusdeandrade96@gmail.com" TextColor="Black" HorizontalOptions="Start" FontSize="Medium" FontAttributes="Italic"/>
                 </StackLayout>
                 <!--<StackLayout Orientation="Vertical" Padding="10,3">

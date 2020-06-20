@@ -2,7 +2,7 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using SmartBikeApp;
-
+using SmartBikeApp.View;
 
 namespace SmartBikeApp
 {
@@ -12,7 +12,10 @@ namespace SmartBikeApp
         public App()
         {
             InitializeComponent();
-            MainPage = new LoginPage();
+            MainPage = new NavigationPage(new SplashPage());
+                        
+            //MainPage = new SplashPage();
+            //MainPage = new LoginPage();
         }
 
         protected override void OnStart()
